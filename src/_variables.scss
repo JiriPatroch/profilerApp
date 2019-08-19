@@ -1,0 +1,37 @@
+/* VARIABLES
+========================================================================== */
+
+html[app-theme='dark']{
+
+    --primary: #ff8000;
+    --primary2: #e85a0c;
+    --primary3: #e8960c;
+
+    --bgPrimary: #0c0c0c;
+    --bgPrimary2: #303030;
+    --bgPrimary3: #515151;
+
+    --textPrimary: #dddddd;
+    --textPrimary2: #bababa;
+    --textPrimary3: #919191;
+
+}
+
+html[app-theme='light']{
+
+    --primary: #e85a0c;
+    --primary2: #ff8000;
+    --primary3: #e8960c;
+
+    --bgPrimary: #dddddd;
+    --bgPrimary2: #bababa;
+    --bgPrimary3: #919191;
+
+    --textPrimary: #0c0c0c;
+    --textPrimary2: #303030;
+    --textPrimary3: #515151;
+
+}
+
+/* END VARIABLES
+========================================================================== */

@@ -1,0 +1,44 @@
+.secondHeader{
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jpLogosecond{
+    height: 3rem;
+    pointer-events: none;
+}
+
+.bulbItem{
+
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+
+    input[type=checkbox]{
+        
+        margin-right: 20px;
+        z-index:2;
+        width: 3rem;
+        height: 3rem;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .bulb{
+        position: absolute;
+        line-height: 3rem;
+        width: 3rem;
+        font-size: 2rem;
+        top: 10px;
+        z-index: 1;
+        color: var(--bgPrimary3);
+    }
+
+    input[type=checkbox]:checked ~ i{
+        color: var(--primary);
+    }
+}

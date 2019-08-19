@@ -1,0 +1,224 @@
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  color: var(--bgPrimary3);
+  text-decoration: none;
+}
+
+a:active{
+  color: var(--textPrimary3);
+  color: white;
+}
+
+ol{
+
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 1.1rem;
+
+  li{
+    color: var(--textPrimary);
+  }
+}
+
+i{
+  cursor: pointer;
+}
+
+body{
+  background: var(--bgPrimary);
+}
+
+hr{
+  margin: 1rem auto;
+  color: var(--bgPrimary3);
+}
+
+.container
+{
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.app {
+  text-align: center;
+  height: 100vh;
+  color: var(--primary);
+}
+
+.appLogo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 1.8rem;
+  pointer-events: none;
+}
+
+.jpLogo {
+  height: 4rem;
+  pointer-events: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.jpBtnSm{
+  position: relative;
+  width: 100px;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--bgPrimary);
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s ease;
+  
+  &::before{
+    content: '';
+    background: var(--primary);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: skew(25deg);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:hover::before{
+    background: var(--primary2);
+  }
+
+  &:hover{
+    color: var(--textPrimary);
+  }
+}
+
+.jpSelectBoxWrapper{
+
+  position: relative;
+  border: 2px solid var(--bgPrimary3);
+  background: var(--bgPrimary);
+
+  .jpSelectBox{
+    position: relative;
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 60px 10px 10px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    z-index: 2;
+
+    &::-ms-expand{
+      display: none;
+    }
+ 
+    option{
+      background-color: var(--bgPrimary3);
+    }
+  }
+    
+  &::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 40px;
+    height: 37px;
+    background: var(--bgPrimary3);
+    cursor: pointer;
+    z-index: 0;
+  }
+  
+  &::after{
+    content: '▼';
+    color: var(--textPrimary2);
+    font-size: 0.8rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  &:hover{
+    background: var(--primary2);
+    
+    .jpSelectBox{
+      color: var(--textPrimary);
+
+    }
+
+    &:after{
+      color: var(--primary);
+    }
+  }
+  
+}
+
+input[type='text']
+{
+  height: 45px;
+  border: 2px solid var(--bgPrimary3);
+  background: var(--bgPrimary2);
+  color: var(--textPrimary);
+  font-size: 0.9rem;
+  padding: 0 10px;
+  max-width: 210px;
+}
+
+
+.hidden{
+  display: none;
+}
+
+/* GLOBAL ANIMATIONS
+========================================================================== */
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+/* END GLOBAL ANIMATIONS
+========================================================================== */

@@ -1,0 +1,50 @@
+.newItemFormP3{
+
+    .dataContent{
+        margin: 3rem auto;
+    }
+
+    .navigation, .menu{
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu{
+        justify-content: flex-end;
+
+        .jpBtnSm{
+            margin-left: 5px;
+        }
+    }
+
+    .projectInfoContent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 3rem auto;
+        font-weight: bold;
+    }
+
+    .inputBox{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-right: 1rem;
+
+        label{
+            margin: 1rem;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+
+    .newItemFormP3{
+        .projectInfoContent{
+            justify-content: center;
+        }
+    }
+}

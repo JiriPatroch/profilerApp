@@ -1,0 +1,73 @@
+.profileTable{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    
+    .menu{
+        margin-top: 1rem;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .jpBtnSm{
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .tableHeader, .tableBody{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    p{
+        color: var(--textPrimary);
+        padding: 10px;
+        min-width: 100px;
+        flex:1;
+    }
+    
+    .tableHeader{
+        margin-bottom: 1rem;
+
+        p{
+            background: var(--bgPrimary2);
+            color: var(--primary);
+            border: 1px solid var(--bgPrimary);
+            font-weight: bold;
+        }
+    }
+
+    .tableBody:nth-child(odd){
+        p{  
+            background: var(--bgPrimary2);
+            border: 1px solid var(--bgPrimary);
+        }      
+    }
+
+    .tableBody:nth-child(even){
+        p{  
+            background: var(--bgPrimary3);
+            border: 1px solid var(--bgPrimary);
+        }      
+    }
+
+    .pagination{
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 590px) {
+    .tableBody{
+        margin-bottom: 1rem;
+    }
+
+}

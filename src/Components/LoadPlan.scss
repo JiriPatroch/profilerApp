@@ -1,0 +1,35 @@
+.jpBtnSm{
+    margin-bottom: 10px;
+}
+
+.navigation, .menu{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectInfoBox{
+    margin-top: 1rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    span{
+        flex: 1;
+    }
+}
+
+.dataContent{
+    margin: 3rem 0;
+}
+
+.menu{
+    justify-content: flex-end;
+
+    .jpBtnSm{
+        margin-left: 5px;
+    }
+}

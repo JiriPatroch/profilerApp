@@ -1,0 +1,50 @@
+.NIFP3Input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .indexField{
+        flex: 1;
+        color: var(--Primary);
+        line-height: 45px;
+        width: 45px;
+        margin-right: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .removeField{
+        width: 45px;
+        font-size: 1.5rem;
+        line-height: 45px;
+        min-width: 45px;
+        margin-left: 1rem;
+        font-weight: bold; 
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover{
+            background: var(--primary2);
+            color: var(--textPrimary);
+        }
+    }
+}
+
+@media (max-width: 920px) {
+
+    .NIFP3Input{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px dashed var(--bgPrimary2);
+        border-bottom: 1px dashed var(--bgPrimary2);
+
+        .indexField{
+            margin-right: 0;
+        }
+
+        .removeField{
+            margin-left: 0;
+        }
+    }
+}

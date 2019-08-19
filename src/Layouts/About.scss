@@ -1,0 +1,63 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    
+    .jpBtnSm{
+        margin: 1rem;
+    }
+    
+    .textContent{
+        
+        h3{
+            text-align: left;
+            margin-bottom: 1rem;
+            color: var(--textPrimary);
+            text-decoration: underline;
+        }
+    
+        p{
+            color: var(--textPrimary);
+            text-align: justify;
+            margin: 1rem auto;
+        }
+
+        .contacts{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            p{
+                color: var(--bgPrimary3);
+                text-align: justify;
+                margin-left: 0;
+            }
+
+            a{
+                transition: all 0.5s ease;
+
+                i{
+                    font-size: 2.5rem;
+                    margin: 0 1rem;
+                }
+            }
+
+            a:hover{
+                color: var(--primary2);
+            }
+
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .textContent{
+        .contacts{
+            p{
+                font-size: 0.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
