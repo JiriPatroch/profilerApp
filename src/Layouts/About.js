@@ -28,7 +28,7 @@ export default function About(props) {
                             <li>Zobrazit sumarizaci plánu</li>
                             <li style={{ color: '#d14545' }}>Vygenerovat PDF s nářezovým plánem</li>
                         </ol>
-                        <p> 1) Aplikace umožňí založit kusovník s položkami pro řezání ke konkrétní zakázce. Polotovary které je možné řezat vybere uživatel z katalogu </p>
+                        <p> 1) Aplikace umožní založit kusovník s položkami pro řezání ke konkrétní zakázce. Polotovary které je možné řezat vybere uživatel z katalogu </p>
                         <p> 2) Aplikace neobsahuje persistentní vrstu, umožňuje však dočasné uložení dat prostředníctvím "Local Storage". Práci s "Local Storage" umožňuje třída Storage. Změnou této třídy může být ukládání dat rychle a jednoduše nahrazeno např. za ukldání do databáze prostřednictvím back-end API</p>
                         <p> 3) Aplikace umožní opětovné načtení vytvořeného plánu a umožní jeho editaci tzn. změnu údajů položek k řezání, mazání vč. smazání celého plánu z uložiště</p>
                         <p> 4) Přehledné zobrazení všech profilů, ze kterých je v aplikaci možné vybírat a tvořit plány</p>
@@ -40,7 +40,6 @@ export default function About(props) {
                             <p>Aplikaci v roce 2019 vytvořil Jiří Patroch</p>
                             <div className='contactIcons'>
                                 <a href='https://github.com/JiriPatroch'><i className="fab fa-github-square"></i></a>
-                                <a href='https://www.facebook.com/digi.deer.9'><i className="fab fa-facebook-square"></i></a>
                                 <a href="mailto:jiripatroch@gmail.com"><i className="fas fa-envelope"></i></a>
                             </div>
                         </div>

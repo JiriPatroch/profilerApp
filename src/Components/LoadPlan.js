@@ -20,7 +20,7 @@ export default class LoadPlan extends Component {
         this.state = {
             hasErrors: false,
             profilesToCut: [],
-            projectInfo: [],
+            projectInfo: {},
             actualFormPage: 1
         }
     }
@@ -28,8 +28,6 @@ export default class LoadPlan extends Component {
     componentDidMount() {
         this.setState({ profilesToCut: this.props.location.state.payload[1] });
         this.setState({ projectInfo: this.props.location.state.payload[0] });
-
-        console.log(this.props.location.state.payload[0][0].profile);
     }
 
     closeModal = () => {
@@ -49,7 +47,6 @@ export default class LoadPlan extends Component {
     validateInputs = () => {
 
         let projectData = this.createDataToStore();
-        console.log(projectData);
         let regex = new RegExp('^[0-9]+$');
         let errors;
 
@@ -154,9 +151,9 @@ export default class LoadPlan extends Component {
                             <NewItemForm4
                                 actualFormPage={actualFormPage}
                                 profilesToCut={profilesToCut}
-                                projectNr={projectInfo.projectNr}
-                                projectName={projectInfo.projectName}
-                                selectedProfile={projectInfo.profile}
+                                projectNr={projectInfo[0].projectNr}
+                                projectName={projectInfo[0].projectName}
+                                selectedProfile={projectInfo[0].profile}
                             />
                         </div>
                     </div>
